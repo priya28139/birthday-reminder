@@ -6,9 +6,9 @@ export default function App() {
   return (
     <main>
       <section className="container">
-        <h3>{data.length} birthdays today</h3>
+        <h3>{people.length} birthdays today</h3>
         <List people={people} />
-        <button onClick={null}>Clear All</button>
+        <button onClick={() => setPeople([])}>Clear All</button>
       </section>
     </main>
   );
